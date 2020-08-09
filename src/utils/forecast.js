@@ -10,7 +10,7 @@ else if(body.error){
     callback('Unable to find the Location please add new Location',undefined);
 }
 else{
-    callback(undefined,body.current.weather_descriptions[0]+'! It is currently '+ body.current.temperature +' degrees out and it feel like '+body.current.feelslike+' degrees');
+    callback(undefined,body.current.weather_descriptions[0]+'! It is currently '+ body.current.temperature +' degrees out. It feels like '+body.current.feelslike+' degrees. The humidity is '+body.current.humidity+'%.');
 }
 });
 }
